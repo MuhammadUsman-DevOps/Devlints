@@ -1,0 +1,95 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %} Contact Us {% endblock title %}
+<!--==========
+	Start of banner section ==========-->
+{% block main_content %}
+<!--==========
+  Start of contact section ==========-->
+
+<section class="slice-pt">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+
+        <!--===== Start of left =====-->
+        <span class="display-5 text-primary-gradient d-block mb-4">+0(23)728-654-123</span>
+        <span class="display-5 text-primary-gradient">info@example.com</span>
+        <p class="mt-5">At nisi praesentium tenetur enim rerum, laborum quidem natus quod expedita explicabo, velit cum, illo aspernatur dolores necessitatibus laudantium ut, eligendi aliquam dolorem suscipit facere provident.</p>
+        <div class="pricing-list list-style-02 mb-4">
+          <ul class="list-unstyled">
+            <li> <i class="fas fa-check"></i> Sunt animi ratione doloribus illo reprehenderit.</li>
+            <li> <i class="fas fa-check"></i> Magnam quasi molestiae non ad, saepe.</li>
+            <li> <i class="fas fa-check"></i> Voluptas ab facere quaerat.</li>
+            <li> <i class="fas fa-check"></i> Dignissimos qui nam.</li>
+          </ul>
+          <div class="row">
+            <div class="col-lg-6 mt-4">
+              <h4>Address </h4>
+              <p class="h6">23 Winchester st. ashtabula, OH 44004</p>
+            </div>
+            <div class="col-lg-6 mt-4">
+              <h4>Call </h4>
+              <p class="h6">info@example.com</p>
+              <p class="h6">(781) 210-0377</p>
+            </div>
+          </div>
+        </div>
+        <!--===== End of left =====-->
+
+      </div>
+      <div class="col-lg-5 offset-lg-1">
+        <div class="p-4 p-md-5 shadow  border rounded">
+
+          <!--===== Start of form =====-->
+          <form class="form-light">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" placeholder="Your name" value="First name">
+              <label>First name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" placeholder="Your name" value="Last name">
+              <label>Last name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" placeholder="info@gmail.com" value="info@gmail.com">
+              <label>Your mail</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" placeholder="+444 (111 456 1465)" value="+444 (111 456 1465)">
+              <label>Your phone</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" placeholder="Your message" rows="3"></textarea>
+              <label>Your message</label>
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label">
+                  I accept the terms & conditions and I understand that my data will be held securely in accordance with the privacy policy.
+                </label>
+              </div>
+            </div>
+            <div class="d-grid">
+              <a class="btn btn-warning btn-rounded" href="#">Get in touch</a>
+            </div>
+          </form>
+          <!--===== End of form =====-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--==========
+  End of contact section ==========-->
+
+<!--==========
+  Start of google map section ==========-->
+
+<!--==========
+  End of google map section ==========-->
+
+{% endblock main_content %}

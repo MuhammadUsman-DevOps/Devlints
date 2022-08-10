@@ -1,0 +1,202 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %} About Us {% endblock title %}
+<!--==========
+	Start of banner section ==========-->
+{% block main_content %}
+<!--==========
+  Start of page title ==========-->
+
+<section class="py-10">
+  <div class="container">
+    <div class="row text-center justify-content-center">
+      <div class="col-lg-9 col-xl-8">
+        <h1>Lorem ipsum dollar summit lorem <span class="text-primary-gradient"> summit.</span> </h1>
+        <p class="lead">Nothing in the world can take the place of persistence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--==========
+  End of page title ==========-->
+
+
+<!--==========
+  Start of about section ==========-->
+
+<section class="slice-pb">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="position-relative">
+          <img class="img-fluid box-shadow rounded" src="{% static 'images/about/02.jpg'%}" alt="about">
+          <div class="bg-primary-gradient p-3 p-sm-5 position-absolute bottom-0 right-0 w-50 mb-n5 rounded">
+            <span class="text-white">Our story</span>
+            <h2 class="text-white">Something know about us</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 mt-5 mt-lg-0">
+        <div class="ps-lg-5 mt-5 mt-lg-0">
+          <div class="mb-5">
+            <span class="text-primary">About Devlints</span>
+            <h2>Lorem ipsum dollar summit (tagline)</h2>
+          </div>
+
+          <!--===== Start of feature item =====-->
+          <div class="d-flex mb-4">
+            <div class="bg-primary-soft-01 avatar-70 flex-70 rounded-circle text-center pt-4">
+              <h5 class="text-primary">01</h5>
+            </div>
+            <div class="ms-4">
+              <h6>Our Vision</h6>
+              <p>Optio accusamus molestias quod delectus laudantiu minima hic expedita.</p>
+            </div>
+          </div>
+          <!--===== End of feature item =====-->
+
+          <!--===== Start of feature item =====-->
+          <div class="d-flex mb-4">
+            <div class="bg-primary-soft-01 avatar-70 flex-70 rounded-circle text-center pt-4">
+              <h5 class="text-primary">02</h5>
+            </div>
+            <div class="ms-4">
+              <h6>Our Mission</h6>
+              <p>Sunt animi ratione doloribus illo reprehenderit velit omnis? Doloribus quasi, maxime.</p>
+            </div>
+          </div>
+          <!--===== End of feature item =====-->
+
+          <!--===== Start of feature item =====-->
+          <div class="d-flex">
+            <div class="bg-primary-soft-01 avatar-70 flex-70 rounded-circle text-center pt-4">
+              <h5 class="text-primary">03</h5>
+            </div>
+            <div class="ms-4">
+              <h6>Our Values</h6>
+              <p>Ea qui debitis dolores quasi officiis, maiores enim, error perspiciatis veniam.</p>
+            </div>
+          </div>
+          <!--===== End of feature item =====-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--==========
+  End of about section ==========-->
+
+
+<!--==========
+  Start of services section ==========-->
+
+<section class="slice-pb">
+  <div class="container">
+
+    <!--===== Start of row =====-->
+    <div class="row">
+      <div class="col-md-4 mb-md-0 mb-4">
+
+        <!--===== Start of feature item =====-->
+        <div class="p-5 feature-box-shadow">
+          <i class="feather icon-box display-4 text-primary"></i>
+          <div class="mt-4">
+            <h4 class="mb-3">Incredible support</h4>
+            <p>Totam ipsam maxime sed deserunt laborum, tempora quas quod cum dolore. Iste, sint!.</p>
+            <a class="btn btn-naked-border btn-icon-right" href="#">Learn more <i class="fas fa-angle-right ps-1"></i></a>
+          </div>
+        </div>
+        <!--===== End of feature item =====-->
+
+      </div>
+      <div class="col-md-4 mb-md-0 mb-4">
+
+        <!--===== Start of feature item =====-->
+        <div class="p-5 feature-box-shadow active">
+          <i class="feather icon-check-circle display-4 text-primary"></i>
+          <div class="mt-4">
+            <h4 class="mb-3">Fully responsive design</h4>
+            <p>Nam cum minima expedita autem voluptatum porro consequuntur quas perspiciatis.</p>
+            <a class="btn btn-naked-border btn-icon-right" href="#">Learn more <i class="fas fa-angle-right ps-1"></i></a>
+          </div>
+        </div>
+        <!--===== End of feature item =====-->
+
+      </div>
+      <div class="col-md-4">
+
+        <!--===== Start of feature item =====-->
+        <div class="p-5 feature-box-shadow">
+          <i class="feather icon-crosshair display-4 text-primary"></i>
+          <div class="mt-4">
+            <h4 class="mb-3">Unique design concept</h4>
+            <p>Id, consequuntur! Vero nulla nam eum atque natus repellat quibusdam laboriosam.</p>
+            <a class="btn btn-naked-border btn-icon-right" href="#">Learn more <i class="fas fa-angle-right ps-1"></i></a>
+          </div>
+        </div>
+        <!--===== End of feature item =====-->
+
+      </div>
+    </div>
+    <!--===== End of row =====-->
+
+  </div>
+</section>
+
+<!--==========
+  End of services section ==========-->
+
+
+<!--==========
+  Start of Video amd counter section ==========-->
+
+<section class="slice-ptb bg-fit overlay-dark-70" style="background-image: url({% static 'images/background/06.jpg'%});">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+
+        <!--===== Start of left item =====-->
+        <h6 class="text-primary mb-4">Creative business work.</h6>
+        <h2 class="text-primary-gradient mb-3 display-2">+220 clients</h2>
+        <p class="text-white mb-4 lead">Odio reprehenderit, deserunt tenetur nemo</p>
+        <p class="text-white mb-4">Beatae corporis facere, optio explicabo natus. Impedit fuga repudiandae perferendis minima quibusdam, ab. Dolore, voluptas? Ratione adipisci iusto veniam aperiam, animi, nostrum ipsam fuga provident voluptatibus!</p>
+        <a class="btn btn-outline-white btn-rounded mt-4" href="#">Our services</a>
+        <!--===== End of left item =====-->
+
+      </div>
+      <div class="col-lg-3 offset-lg-1 mt-5 mt-lg-0">
+
+        <!--===== Start of counter item =====-->
+        <div class="counter text-center bg-white-soft-01 p-4 rounded mb-3">
+          <span class="timer counter-number display-5 text-warning font-weight-normal" data-to="24" data-speed="24"></span>
+          <h6 class="counter-text mb-0 text-white">Total Products</h6>
+        </div>
+        <!--===== End of counter item =====-->
+
+        <!--===== Start of counter item =====-->
+        <div class="counter text-center bg-white-soft-01 p-4 rounded mb-3">
+          <span class="timer counter-number display-5 text-warning font-weight-normal" data-to="1842" data-speed="1842"></span>
+          <h6 class="counter-text mb-0 text-white">Monthly Traffic</h6>
+        </div>
+        <!--===== End of counter item =====-->
+
+        <!--===== Start of counter item =====-->
+        <div class="counter text-center bg-white-soft-01 p-4 rounded">
+          <span class="timer counter-number display-5 text-warning font-weight-normal" data-to="1455" data-speed="1455"></span>
+          <h6 class="counter-text mb-0 text-white">Working hours</h6>
+        </div>
+        <!--===== End of counter item =====-->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--==========
+  End of Video amd counter section ==========-->
+
+
+{% endblock main_content %}
