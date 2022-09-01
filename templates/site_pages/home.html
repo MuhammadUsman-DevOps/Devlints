@@ -4,342 +4,236 @@
 <!--==========
 	Start of banner section ==========-->
 {% block main_content %}
-<section class="banner-mobile-app bg-fit position-relative">
-	<div class="container-fluid">
+    <section class="banner-mobile-app bg-fit position-relative">
+        <div class="container-fluid">
+            <!--===== Start of row =====-->
+            <div class="row g-0">
+                <div class="col-lg-6 bg-light p-4 p-sm-5 p-xl-6 p-xxl-8">
+                    <h1 class="display-2 mb-4 pt-xxl-5">{{ company_info.tag_line }}</h1>
+                    <p class="lead">{{ company_info.description }}</p>
+                    <a class="btn btn-dark btn-rounded mt-4" href="{% url 'about_us' %}">Discover more</a>
+                    <div class="list-style mt-5">
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center h6 mb-2"><i
+                                    class="fas fa-check-circle me-3 text-primary"></i>Creative business work.
+                            </li>
+                            <li class="d-flex align-items-center h6 mb-2"><i
+                                    class="fas fa-check-circle me-3 text-primary"></i>A day with Sunshine.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-4 p-sm-5 p-xl-8 bg-fit"
+                     style="background-image: url({{ company_info.banner_background_image.url }});">
+                    <img class="img-fluid" src="{{ company_info.banner_foreground_image.url }}" alt="">
+                </div>
+            </div>
+            <!--===== End of row =====-->
+        </div>
+    </section>
 
-		<!--===== Start of row =====-->
-		<div class="row g-0">
-			<div class="col-lg-6 bg-light p-4 p-sm-5 p-xl-6 p-xxl-8">
-				<h1 class="display-2 mb-4 pt-xxl-5">Get quality at a valuable price.</h1>
-				<p class="lead">Delivering success with every solution regarding the online applications provident commodi.</p>
-				<a class="btn btn-dark btn-rounded mt-4" href="#">Discover more</a>
-				<div class="list-style mt-5">
-					<ul class="list-unstyled">
-						<li class="d-flex align-items-center h6 mb-2"><i class="fas fa-check-circle me-3 text-primary"></i>Creative business work.</li>
-						<li class="d-flex align-items-center h6 mb-2"><i class="fas fa-check-circle me-3 text-primary"></i>A day with Sunshine.</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-6 p-4 p-sm-5 p-xl-8 bg-fit"  style="background-image: url({% static 'images/mobile-app/01.jpg'%});">
-				<img class="img-fluid" src="{% static 'images/mobile-app/07.png'%}" alt="">
-			</div>
-		</div>
-		<!--===== End of row =====-->
-
-	</div>
-</section>
-
-<!--==========
-	End of banner section ==========-->
+    <!--==========
+        End of banner section ==========-->
 
 
-<!--==========
-	Start of services section ==========-->
+    <!--==========
+        Start of services section ==========-->
 
-<section class="slice-pt position-relative">
-	<div class="container">
-		<!--===== Start of row =====-->
-		<div class="row justify-content-center">
-			<div class="col-lg-5">
-				<div class="mb-5 text-center">
-					<span class="text-black">Our Products</span>
-					<h2 class="mt-3">Creative solutions for all your problems </h2>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-				<div class="p-4 p-sm-5 rounded box-shadow-primary h-100">
-					<img class="img-fluid" src="{% static 'images/mobile-app/03.png'%}" alt="">
-					<h4>Product 1</h4>
-					<p>EExpedita reprehenderit saepe sapiente!</p>
-					<a class="btn btn-naked btn-icon-right" href="#!"> Discover more <i class="fas fa-chevron-right"></i> </a>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-				<div class="p-4 p-sm-5 rounded box-shadow-primary h-100">
-					<img class="img-fluid" src="{% static 'images/mobile-app/04.png'%}" alt="">
-					<h4>Product 2</h4>
-					<p>Ea qui debitis dolores quasi officiis!</p>
-					<a class="btn btn-naked btn-icon-right" href="#!"> Discover more <i class="fas fa-chevron-right"></i> </a>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6 mb-4 mb-sm-0">
-				<div class="p-4 p-sm-5 rounded box-shadow-primary h-100">
-					<img class="img-fluid" src="{% static 'images/mobile-app/05.png'%}" alt="">
-					<h4>Product 3</h4>
-					<p>Deserunt molestias laudantium aliquid!</p>
-					<a class="btn btn-naked btn-icon-right" href="#!"> Discover more <i class="fas fa-chevron-right"></i> </a>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6">
-				<div class="p-4 p-sm-5 rounded box-shadow-primary h-100">
-					<img class="img-fluid" src="{% static 'images/mobile-app/06.png'%}" alt="">
-					<h4>Product 4</h4>
-					<p>Odio reprehenderit, deserunt tenetur!</p>
-					<a class="btn btn-naked btn-icon-right" href="#!"> Discover more <i class="fas fa-chevron-right"></i> </a>
-				</div>
-			</div>
-		</div>
-		<!--===== End of row =====-->
-	</div>
-</section>
+    <section class="slice-pt position-relative">
+        <div class="container">
+            <!--===== Start of row =====-->
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="mb-5 text-center">
+                        <span class="text-black">Our Products</span>
+                        <h2 class="mt-3">Creative solutions for all your problems </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for product in products %}
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                        <div class="p-4 p-sm-5 rounded box-shadow-primary h-100">
+                            <img class="img-fluid" src="{{ product.thumbnail_small.url }}" alt="">
+                            <h4>{{ product.product_name }}</h4>
+                            <p>{{ product.description|wordwrap:10 }}</p>
+                            <a class="btn btn-naked btn-icon-right" href="#!"> Discover more <i
+                                    class="fas fa-chevron-right"></i> </a>
+                        </div>
+                    </div>
+                {% endfor %}
 
-<!--==========
-	End of services section ==========-->
+            </div>
+            <!--===== End of row =====-->
+        </div>
+    </section>
+
+    <!--==========
+        End of services section ==========-->
 
 
     <!--==========
 	Start of tabs section ==========-->
 
-<section class="slice-pt position-relative">
-	<div class="container">
-		<!--===== Start of row =====-->
-		<div class="row align-items-center">
-			<div class="col-12">
-				<ul class="nav nav-pills nav-border-wide justify-content-center mb-3" id="pills-tab" role="tablist">
-					<li class="nav-item" role="presentation">
-						<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Product 1</button>
-					</li>
-					<li class="nav-item" role="presentation">
-						<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Product 2</button>
-					</li>
-					<li class="nav-item" role="presentation">
-						<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Product 3</button>
-					</li>
-					<li class="nav-item" role="presentation">
-						<button class="nav-link" id="pills-integration-tab" data-bs-toggle="pill" data-bs-target="#pills-integration" type="button" role="tab" aria-controls="pills-integration" aria-selected="false">Product 4</button>
-					</li>
-				</ul>
-				<div class="tab-content mt-5" id="pills-tabContent">
-					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-						<div class="row mb-md-5">
-							<div class="col-lg-6">
-								<img class="img-fluid" src="{% static 'images/saas/03.png'%}" alt="">
-							</div>
-							<div class="col-lg-5 mt-5">
-								<h3>The integration of information, design, and technology.</h3>
-								<p>Placeat ex eligendi nobis modi velit animi nisi, libero eius ea delectu.</p>
-								<div class="d-flex mt-5">
-									<i class="feather icon-minus fa-2x text-primary"></i>
-									<div class="ms-4">
-										<h5>Fresh & Clean Design</h5>
-										<p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-									</div>
-								</div>
-								<div class="d-flex mt-4">
-									<i class="feather icon-minus fa-2x text-primary"></i>
-									<div class="ms-4">
-										<h5>Unique design concept</h5>
-										<p>Porro, illo repellendus velit voluptatibus qui fuga aut.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-						<div class="row mb-md-5">
-							<div class="col-lg-6">
-								<img class="img-fluid" src="{% static 'images/saas/05.png'%}" alt="">
-							</div>
-							<div class="col-lg-5 mt-5">
-								<h3>In a World of Technology, People Make the Difference.</h3>
-								<p>Placeat ex eligendi nobis modi velit animi nisi, libero eius ea delectu.</p>
-								<div class="d-flex mt-5">
-									<i class="feather icon-minus fa-2x text-primary"></i>
-									<div class="ms-4">
-										<h5>Fresh & Clean Design</h5>
-										<p>Voluptatum culpa optio, velit ullam corporis facere sint blanditiis.</p>
-									</div>
-								</div>
-								<div class="d-flex mt-4">
-									<i class="feather icon-minus fa-2x text-primary"></i>
-									<div class="ms-4">
-										<h5>Unique design concept</h5>
-										<p>Error perspiciatis veniam distinctio eaque voluptatum.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-						<div class="row mb-md-5">
-							<div class="col-lg-6">
-								<img class="img-fluid" src="{% static 'images/saas/03.png'%}" alt="">
-							</div>
-							<div class="col-lg-5 mt-5">
-								<h3>The integration of information, design, and technology.</h3>
-								<p>Placeat ex eligendi nobis modi velit animi nisi, libero eius ea delectu.</p>
-								<div class="d-flex mt-5">
-									<i class="feather icon-minus fa-2x text-primary"></i>
-									<div class="ms-4">
-										<h5>Fresh & Clean Design</h5>
-										<p>Nemo recusandae exercitationem ipsum, veniam repudiandae.</p>
-									</div>
-								</div>
-								<div class="d-flex mt-4">
-									<i class="feather icon-minus fa-2x text-primary"></i>
-									<div class="ms-4">
-										<h5>Unique design concept</h5>
-										<p>Sapiente possimus cupiditate officia mollitia.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tab-pane fade" id="pills-integration" role="tabpanel" aria-labelledby="pills-integration-tab">
-						<div class="row mb-md-5">
-							<div class="col-lg-6">
-								<img class="img-fluid" src="{% static 'images/saas/05.png'%}" alt="">
-							</div>
-							<div class="col-lg-5 mt-5">
-								<h3>Sometimes the best way to envision the future is to invent it.</h3>
-								<p>Placeat ex eligendi nobis modi velit animi nisi, libero eius ea delectu.</p>
-								<div class="d-flex mt-5">
-									<i class="feather icon-minus fa-2x text-primary"></i>
-									<div class="ms-4">
-										<h5>Fresh & Clean Design</h5>
-										<p> Quos minus sequi esse iste nesciunt culpa.</p>
-									</div>
-								</div>
-								<div class="d-flex mt-4">
-									<i class="feather icon-minus fa-2x text-primary"></i>
-									<div class="ms-4">
-										<h5>Unique design concept</h5>
-										<p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--===== End of row =====-->
-	</div>
-</section>
+    <section class="slice-pt position-relative">
+        <div class="container">
+            <!--===== Start of row =====-->
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <ul class="nav nav-pills nav-border-wide justify-content-center mb-3" id="pills-tab" role="tablist">
+                        {% for product in products %}
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link {% if forloop.revcounter0 %} active {% endif %}"
+                                        id="pills-{{ product.pk }}-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-{{ product.pk }}" type="button" role="tab"
+                                        aria-controls="pills-{{ product.pk }}"
+                                        aria-selected="true">{{ product.product_name }}</button>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    <div class="tab-content mt-5" id="pills-tabContent">
+                        {% for product in products %}
+                            <div class="tab-pane fade {% if forloop.counter0 %} show active {% endif %}"
+                                 id="pills-{{ product.pk }}" role="tabpanel"
+                                 aria-labelledby="pills-{{ product.pk }}-tab">
+                                <div class="row mb-md-5">
+                                    <div class="col-lg-6">
+                                        <img class="img-fluid" src="{{ product.thumbnail_large.url }}" alt="">
+                                    </div>
+                                    <div class="col-lg-5 mt-5">
+                                        <h3>{{ product.product_name }}</h3>
+                                        <p>{{ product.description }}</p>
+                                        <div class="d-flex mt-5">
+                                            <i class="feather icon-minus fa-2x text-primary"></i>
+                                            <div class="ms-4">
+                                                <h5>{{ product.feature_1 }}</h5>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-4">
+                                            <i class="feather icon-minus fa-2x text-primary"></i>
+                                            <div class="ms-4">
+                                                <h5>{{ product.feature_2 }}</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <!--===== End of row =====-->
+        </div>
+    </section>
 
-<!--==========
-	End of tabs section ==========-->
+    <!--==========
+        End of tabs section ==========-->
 
-<!--==========
-	Start of counter section ==========-->
+    <!--==========
+        Start of counter section ==========-->
 
-<section class="mt-0 mb-md-5 position-relative">
-	<div class="container">
-		<!--===== Start of row =====-->
-		<div class="row align-items-center">
-			<div class="col-lg-3 col-sm-6">
-				<div class="mb-5">
-					<span class="text-black">How is work</span>
-					<h2 class="mt-3">Always think forward.</h2>
-				</div>
-			</div>
+    <section class="mt-0 mb-md-5 position-relative">
+        <div class="container">
+            <!--===== Start of row =====-->
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="mb-5">
+                        <h2 class="mt-3">{{ states.title }}</h2>
+                    </div>
+                </div>
 
-			<div class="col-lg-3 col-sm-6 mb-5 mb-sm-0">
+                <div class="col-lg-3 col-sm-6 mb-5 mb-sm-0">
 
-				<!--===== Start of counter =====-->
-				<div class="counter counter-icon">
-					<span class="timer counter-number display-5 text-dark font-weight-normal" data-to="1565" data-speed="1500"></span>
-					<h6 class="counter-text mb-0">Total Products</h6>
-					<i class="icon feather icon-box"></i>
-				</div>
-				<!--===== End of counter =====-->
+                    <!--===== Start of counter =====-->
+                    <div class="counter counter-icon">
+                        <span class="timer counter-number display-5 text-dark font-weight-normal"
+                              data-to="{{ states.total_products }}" data-speed="1500"></span>
+                        <h6 class="counter-text mb-0">Total Products</h6>
+                        <i class="icon feather icon-box"></i>
+                    </div>
+                    <!--===== End of counter =====-->
 
-			</div>
-			<div class="col-lg-3 col-sm-6 mb-5 mb-sm-0">
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 mb-sm-0">
 
-				<!--===== Start of counter =====-->
-				<div class="counter counter-icon">
-					<span class="timer counter-number display-5 text-dark font-weight-normal" data-to="2365" data-speed="1500"></span>
-					<h6 class="counter-text mb-0">Monthly Users</h6>
-					<i class="icon feather icon-command"></i>
-				</div>
-				<!--===== End of counter =====-->
+                    <!--===== Start of counter =====-->
+                    <div class="counter counter-icon">
+                        <span class="timer counter-number display-5 text-dark font-weight-normal"
+                              data-to="{{ states.monthly_users }}" data-speed="1500"></span>
+                        <h6 class="counter-text mb-0">Monthly Users</h6>
+                        <i class="icon feather icon-command"></i>
+                    </div>
+                    <!--===== End of counter =====-->
 
-			</div>
-			<div class="col-lg-3 col-sm-6 mb-5 mb-sm-0">
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 mb-sm-0">
 
-				<!--===== Start of counter =====-->
-				<div class="counter counter-icon">
-					<span class="timer counter-number display-5 text-dark font-weight-normal" data-to="1658" data-speed="1500"></span>
-					<h6 class="counter-text mb-0">Working Hours</h6>
-					<i class="icon feather icon-clipboard"></i>
-				</div>
-				<!--===== End of counter =====-->
+                    <!--===== Start of counter =====-->
+                    <div class="counter counter-icon">
+                        <span class="timer counter-number display-5 text-dark font-weight-normal"
+                              data-to="{{ states.working_hours }}" data-speed="1500"></span>
+                        <h6 class="counter-text mb-0">Working Hours</h6>
+                        <i class="icon feather icon-clipboard"></i>
+                    </div>
+                    <!--===== End of counter =====-->
 
-			</div>
-		</div>
-		<!--===== End of row =====-->
-	</div>
-</section>
+                </div>
+            </div>
+            <!--===== End of row =====-->
+        </div>
+    </section>
 
-<!--==========
-	End of counter section ==========-->
+    <!--==========
+        End of counter section ==========-->
 
 
-<!--==========
-	Start of testimonials section ==========-->
+    <!--==========
+        Start of testimonials section ==========-->
 
-<section class="slice-ptb position-relative">
-	<div class="container">
+    <section class="slice-ptb position-relative">
+        <div class="container">
 
-		<!--===== Start of row =====-->
-		<div class="bg-pink-soft-01 px-4 px-md-7">
-			<div class="row align-items-center">
-				<div class="col-lg-6 mt-lg-n8">
-					<div class="p-4 p-sm-5 bg-white rounded d-flex mb-4 box-shadow-primary">
-						<div class="d-flex">
-							<img class="img-fluid rounded-circle avatar-50" src="{% static 'images/avatar/01.jpg'%}" alt="">
-							<div class="ms-4">
-								<h6><a class="text-primary" href="#">Naima Haley</a></h6>
-								<p class="mb-0">When people undermine your dreams, predict your doom, or criticize you remember, they're telling....”</p>
-							</div>
-						</div>
-					</div>
-					<div class="p-4 p-sm-5 bg-white rounded d-flex mb-4 ms-md-5 me-md-n4 box-shadow-primary">
-						<div class="d-flex">
-							<img class="img-fluid rounded-circle avatar-50" src="{% static 'images/avatar/02.jpg'%}" alt="">
-							<div class="ms-4">
-								<h6><a class="text-primary" href="#">Naima Haley</a></h6>
-								<p class="mb-0">He who asks is a fool for five minutes, but he who does not ask remains a fool forever....”</p>
-							</div>
-						</div>
-					</div>
-					<div class="p-4 p-sm-5 bg-white rounded d-flex mb-lg-n8 box-shadow-primary">
-						<div class="d-flex">
-							<img class="img-fluid rounded-circle avatar-50" src="{% static 'images/avatar/03.jpg'%}" alt="">
-							<div class="ms-4">
-								<h6><a class="text-primary" href="#">Naima Haley</a></h6>
-								<p class="mb-0">If you've got an idea, start today. There's no better time than now to get going...”</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0 pb-4 pb-sm-0">
-					<div class="mb-5">
-						<span class="text-black">How is work</span>
-						<h2 class="mt-3">A magical device at an unbelievable.</h2>
-					</div>
-					<h2>4,8</h2>
-					<ul class="d-flex fs-2 text-warning">
-						<li> <i class="fas fa-star"></i> </li>
-						<li> <i class="fas fa-star"></i> </li>
-						<li> <i class="fas fa-star"></i> </li>
-						<li> <i class="fas fa-star"></i> </li>
-						<li> <i class="fas fa-star"></i> </li>
-					</ul>
-					<p class="lead">Average of our clients ratings</p>
-				</div>
-			</div>
-		</div>
-		<!--===== End of row =====-->
+            <!--===== Start of row =====-->
+            <div class="bg-pink-soft-01 px-4 px-md-7">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mt-lg-n8">
+                        {% for testimonial in testimonials %}
+                            <div class="p-4 p-sm-5 bg-white rounded d-flex mb-4 {% if forloop.counter is 2 %} ms-md-5 me-md-n4 {% endif %} {% if forloop.last %} mb-lg-n8 {% endif %} box-shadow-primary">
+                                <div class="d-flex">
+                                    <img class="img-fluid rounded-circle avatar-50" src="{{ testimonial.picture.url }}"
+                                         alt="">
+                                    <div class="ms-4">
+                                        <h6><a class="text-primary" href="#">{{ testimonial.name }}</a></h6>
+                                        <p class="mb-0">{{ testimonial.comment }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0 pb-4 pb-sm-0">
+                        <div class="mb-5">
+                            <span class="text-black"></span>
+                            <h2 class="mt-3">They love us. You will too</h2>
+                        </div>
+                        <h2>4,8</h2>
+                        <ul class="d-flex fs-2 text-warning">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p class="lead">Average of our clients ratings</p>
+                    </div>
+                </div>
+            </div>
+            <!--===== End of row =====-->
 
-	</div>
-</section>
+        </div>
+    </section>
 
-<!--==========
-	End of testimonials section ==========-->
+    <!--==========
+        End of testimonials section ==========-->
 
 
 {% endblock main_content %}

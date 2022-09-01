@@ -1,0 +1,168 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %} About Us {% endblock title %}
+<!--==========
+	Start of banner section ==========-->
+{% block main_content %}
+    <!--==========
+      Start of page title ==========-->
+
+    <section class="py-10">
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <div class="col-lg-9 col-xl-8">
+                    <h1>Our Core Services</h1>
+                    <p class="lead">Nothing in the world can take the place of persistence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==========
+      End of page title ==========-->
+
+    <!--==========
+      Start of services section ==========-->
+
+    <section class="slice-ptb bg-light">
+        <div class="container">
+            <div class="row">
+
+                {% for service in services %}
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!--===== Start of feature =====-->
+                    <div class="p-5 feature-box-shadow {% if forloop.counter is 2 %} active {% endif %}">
+                        <i class="feather {{ service.icon }} display-4 text-primary"></i>
+                        <div class="mt-4">
+                            <h4 class="mb-3">{{ service.title }}</h4>
+                            <p>{{ service.description }}</p>
+                            <a class="btn btn-naked-border btn-icon-right" href="{% url 'support_faqs' %}">Learn more <i
+                                    class="fas fa-angle-right ps-1"></i></a>
+                        </div>
+                    </div>
+                    <!--===== End of feature =====-->
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!--==========
+      Start of services section ==========-->
+
+
+    <!--==========
+      End of testimonials section ==========-->
+
+    <section class="slice-ptb">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6">
+                    <div class="mb-5">
+                        <span class="text-primary">Our Testimonials</span>
+                        <h2>They love us. You will too</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper-container swiper-container-auto" data-slidesPerView="3"
+                         data-mobile-slidesPerView="1" data-tablet-slidesPerView="2" data-spaceBetween="20"
+                         data-loop="true" data-autoplay="true" data-auto-speed="2500" data-disable-on-touch="false"
+                         data-dots="true" data-auto-height="false" data-pagination="true" data-navigation="true">
+                        <div class="swiper-wrapper">
+                            {% for testimonial in testimonials %}
+                            <div class="swiper-slide">
+                                <!--===== Start of testimonial =====-->
+                                <div class="testimonial-item bg-white p-5 rounded border text-center">
+                                    <div class="testimonial-author">
+                                        <img class="img-fluid rounded-circle" src="{{ testimonial.picture.url }}" alt="">
+                                    </div>
+                                    <div class="testimonial-content mt-4">
+                                        <p>{{ testimonial.comment }}</p>
+                                    </div>
+                                    <div class="testimonial-author-name">
+                                        <h6 class="mb-0"><a class="text-primary" href="#">{{ testimonial.name }}</a></h6>
+                                        <small class="d-block">by@Founder </small>
+                                    </div>
+                                    <div class="testimonial-rating">
+                                        <ul class="d-flex justify-content-center mt-4 text-warning">
+                                            <li class="mx-1 fs-5"><i class="fas fa-star"></i></li>
+                                            <li class="mx-1 fs-5"><i class="fas fa-star"></i></li>
+                                            <li class="mx-1 fs-5"><i class="fas fa-star"></i></li>
+                                            <li class="mx-1 fs-5"><i class="fas fa-star"></i></li>
+                                            <li class="mx-1 fs-5"><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--===== End of testimonial =====-->
+                            </div>
+                            {% endfor %}
+
+
+
+                            <div class="swiper-slide">
+                                <!--===== Start of testimonial =====-->
+                                <div class="testimonial-item bg-white p-5 rounded border text-center">
+                                    <div class="testimonial-author">
+                                        <img class="img-fluid rounded-circle" src="{% static 'images/avatar/02.jpg' %}" alt="">
+                                    </div>
+                                    <div class="testimonial-content mt-4">
+                                        <p>If you are going to achieve excellence in big things, you develop the habit
+                                            in little matters. Excellence is not an exception.</p>
+                                    </div>
+                                    <div class="testimonial-author-name">
+                                        <h6 class="mb-0"><a class="text-primary" href="#">Skye peters</a></h6>
+                                        <small class="d-block">by@CEO </small>
+                                    </div>
+                                    <div class="testimonial-rating">
+                                        <ul class="d-flex justify-content-center mt-4 text-warning">
+                                            <li class="mx-1 fs-5"><i class="fas fa-star"></i></li>
+                                            <li class="mx-1 fs-5"><i class="fas fa-star"></i></li>
+                                            <li class="mx-1 fs-5"><i class="fas fa-star"></i></li>
+                                            <li class="mx-1 fs-5"><i class="fas fa-star"></i></li>
+                                            <li class="mx-1 fs-5"><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--===== End of testimonial =====-->
+                            </div>
+
+                            <div class="swiper-slide">
+                                <!--===== Start of testimonial =====-->
+                                <div class="testimonial-item bg-white p-5 rounded border text-center">
+                                    <div class="testimonial-author">
+                                        <img class="img-fluid rounded-circle" src="{% static 'images/avatar/03.jpg' %}" alt="">
+                                    </div>
+                                    <div class="testimonial-content mt-4">
+                                        <p>If you've got an idea, start today. There's no better time than now to get
+                                            going. That doesn't mean quit your job and jump into.</p>
+                                    </div>
+                                    <div class="testimonial-author-name">
+                                        <h6 class="mb-0"><a class="text-primary" href="#">Lewis bass</a></h6>
+                                        <small class="d-block">by@Web designer</small>
+                                    </div>
+                                    <div class="testimonial-rating">
+                                        <ul class="d-flex justify-content-center mt-4 text-warning">
+                                            <li class="mx-1 fs-5"><i class="fas fa-star"></i></li>
+                                            <li class="mx-1 fs-5"><i class="fas fa-star"></i></li>
+                                            <li class="mx-1 fs-5"><i class="fas fa-star"></i></li>
+                                            <li class="mx-1 fs-5"><i class="fas fa-star"></i></li>
+                                            <li class="mx-1 fs-5"><i class="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--===== End of testimonial =====-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==========
+      Start of testimonial section ==========-->
+
+
+{% endblock main_content %}

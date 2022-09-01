@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12960346-526c-463a-8a0c-118dec8d46f5" name="Default Changelist" comment="" />
+    <list default="true" id="12960346-526c-463a-8a0c-118dec8d46f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Devlints/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Devlints/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/site_pages/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Devlints/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Devlints/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Devlints/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Devlints/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Devlints/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Devlints/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/background/06.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/background/06.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site_pages/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site_pages/about_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site_pages/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site_pages/contact_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site_pages/faqs.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site_pages/faqs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site_pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site_pages/home.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,12 +26,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2DAL2XqgtksJrF1se8m7W4ydr4t" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,10 +45,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/site_pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images/background" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\muham\PycharmProjects\Devlints\static\images\background" />
+      <recent name="C:\Users\muham\PycharmProjects\Devlints\static\images" />
       <recent name="C:\Users\muham\PycharmProjects\Devlints\templates\site_pages" />
       <recent name="C:\Users\muham\PycharmProjects\Devlints\templates\base" />
       <recent name="C:\Users\muham\PycharmProjects\Devlints\static" />
@@ -69,7 +91,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660136735768</updated>
-      <workItem from="1660136924587" duration="9639000" />
+      <workItem from="1660136924587" duration="10678000" />
+      <workItem from="1660204830087" duration="53000" />
+      <workItem from="1661837578358" duration="14465000" />
+      <workItem from="1661924936861" duration="5114000" />
+      <workItem from="1662014618389" duration="2220000" />
     </task>
     <servers />
   </component>
@@ -77,9 +103,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1660158368643">
+    <state x="592" y="236" key="FileChooserDialogImpl" timestamp="1661843923788">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="2660" y="295" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1660204887050" />
+    <state x="592" y="236" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1661843923788" />
+    <state x="2576" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1662014632659">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1660158368643" />
+    <state x="2576" y="364" key="com.intellij.ide.util.TipDialog/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1662014632659" />
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1662015823098">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1662015823098" />
   </component>
 </project>
